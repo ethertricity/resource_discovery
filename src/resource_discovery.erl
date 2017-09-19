@@ -88,7 +88,7 @@ start() ->
 start(_Type, _StartArgs) ->
     % Create the storage for the local parameters; i.e. LocalTypes
     % and TargetTypes.
-    rand:seed(erlang:timestamp()),
+    rand:seed(exs64),
     rd_store:new(),
     rd_sup:start_link().
 
